@@ -1,3 +1,11 @@
+
+setInterval(function(){
+const loading = document.querySelector("#circle");
+const mainContent = document.querySelector(".mainBox");
+loading.style.display = "none";
+mainContent.style.display = "block";
+}, 3000);
+//country---------------------------------------------------------------------------------
 const tabheader = document.querySelector(".tabheader__items");
 let mamlakat = document.querySelector('.country');
 tabheader.addEventListener('click', (events) =>{

@@ -28,6 +28,10 @@ ul {
 	margin: auto;
 }
 
+
+.mainBox{
+	display: none;
+}
 /* Utility Classes */
 .btn {
 	display: inline-block;
