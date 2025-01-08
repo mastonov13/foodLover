@@ -21,7 +21,7 @@ const day = document.querySelector("#days");
 const hour = document.querySelector("#hours");
 const minut = document.querySelector("#minutes");
 const sekund = document.querySelector("#seconds");
-const eventDate = new Date("2025-01-08T23:00:00");
+const eventDate = new Date("2025-01-31T23:00:00");
 
 function updateCountdown() {
 const now = new Date();
