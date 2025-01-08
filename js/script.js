@@ -15,6 +15,29 @@ tabheader.addEventListener('click', (events) =>{
         const text = events.target.textContent.trim(); 
         mamlakat.textContent = text;
 });
+//QOLGAN VAQT
 
+const day = document.querySelector("#days");
+const hour = document.querySelector("#hours");
+const minut = document.querySelector("#minutes");
+const sekund = document.querySelector("#seconds");
+const eventDate = new Date("2025-01-08T23:00:00");
+
+function updateCountdown() {
+const now = new Date();
+const diff = eventDate - now; // Millisekundlar farqi
+const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+const hours = Math.floor((diff /(1000 * 60 * 60)) % 24);
+const minutes = Math.floor((diff /(1000 * 60)) % 60);
+const seconds = Math.floor((diff /1000) % 60);
+
+
+ document.querySelector("#days").innerHTML = `${days}`;
+ document.querySelector("#hours").innerHTML = `${hours}`;
+ document.querySelector("#minutes").innerHTML = `${minutes}`;
+ document.querySelector("#seconds").innerHTML = `${seconds}`;
+
+}
+setInterval(updateCountdown, 1000); //Har bir soniyada yangilanadi
 
 
