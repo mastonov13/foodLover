@@ -28,7 +28,13 @@ ul {
 	margin: auto;
 }
 
-
+#circle p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+	font-size: 30px;
+}
 .mainBox{
 	display: none;
 }
