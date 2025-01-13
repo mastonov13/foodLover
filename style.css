@@ -43,12 +43,39 @@ ul {
 	position: fixed;
 	z-index: 10000;
 	top: 30%;
-	left: 30%;
+	left: 40%;
 	width: 400px;
 	height: 250px;
-	background-color: #9a9a9a;
+	background-color: #fff;
 	display: none;
+	border-radius: 5px;
+}
+.modalContent{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 220px;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+.modalContent input{
+	height: 40px;
+	width: 300px;
+	background-color: #3c3b6e;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	border: #b0b0b0 0.5px solid;
+}
+#submitContact{
+	background-color: rgb(196, 110, 48);
+}
 
+.fa-xmark {
+	position: absolute;
+	top: 15px;
+	left: 375px;
 }
 /* Utility Classes */
 .btn {

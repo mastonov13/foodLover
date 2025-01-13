@@ -44,3 +44,8 @@ function openmodel() {
     document.querySelector(".modalll").style.display = "block";
     document.body.style.overflow = 'hidden';
 }
+
+function closemodel() {
+    document.querySelector(".modalll").style.display = "none";
+    document.body.style.overflow = 'visible';
+}
