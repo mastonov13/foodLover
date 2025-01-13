@@ -40,4 +40,7 @@ const seconds = Math.floor((diff /1000) % 60);
 }
 setInterval(updateCountdown, 1000); //Har bir soniyada yangilanadi
 
-
+function openmodel() {
+    document.querySelector(".modalll").style.display = "block";
+    document.body.style.overflow = 'hidden';
+}

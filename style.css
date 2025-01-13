@@ -38,6 +38,18 @@ ul {
 .mainBox{
 	display: none;
 }
+
+.modalll{
+	position: fixed;
+	z-index: 10000;
+	top: 30%;
+	left: 30%;
+	width: 400px;
+	height: 250px;
+	background-color: #9a9a9a;
+	display: none;
+
+}
 /* Utility Classes */
 .btn {
 	display: inline-block;
