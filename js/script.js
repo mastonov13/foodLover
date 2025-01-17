@@ -5,6 +5,14 @@ const mainContent = document.querySelector(".mainBox");
 loading.style.display = "none";
 mainContent.style.display = "block";
 }, 3000);
+const inter = setInterval(()=>{
+    const doll = document.querySelector(".dollar").style.display="block";
+    clearInterval(inter);
+}, 5000);
+setInterval(()=>{
+    const doll = document.querySelector(".dollar").style.display="none";
+}, 7000)
+
 //country---------------------------------------------------------------------------------
 const tabheader = document.querySelector(".tabheader__items");
 let mamlakat = document.querySelector('.country');
@@ -49,3 +57,14 @@ function closemodel() {
     document.querySelector(".modalll").style.display = "none";
     document.body.style.overflow = 'visible';
 }
+//Our Special Offers
+class SpecialOffer{
+    constructor(imgs, footName, footTitle, price){
+        this.imgs = imgs;
+        this.footName = footName;
+        this.footTitle = footTitle;
+        this.price = price;
+    }
+}
+
+const specialOffer = new SpecialOffer("img", "lagman", "adsfcsdfasdf", "$8.00");

@@ -255,7 +255,13 @@ header * {
 	align-items: center;
 	text-align: center;
 }
-
+.dollar{
+	position: fixed;
+	top: 200px;
+	left: 200px;
+	display: none;
+	z-index: 10000;
+}
 #offers .offers-items img {
 	width: 200px;
 }
